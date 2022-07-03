@@ -2,25 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />"
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+        <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /> -->
+        <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title> Code Quiz </title>
     </head>
     <body>
-        <div class="jumbotron">
-            <h1 class="display-4"></h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-          </div>    
+      <header>
+        <section class="high-score">
+          <a> View high Scores</a>
+        </section>
+        <section class="timer">
+          <h5>Time Remianing:</h3>
+        </section>
+      </header>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <main>
+        <section class="main code-quiz">Code Quiz Challenge</section>
+        <h4 class="main instructions"> Try to answer the following code-realted quetions 
+            within the time limit. Keep in mind that incorrect answers will penalize 
+            your score/time by ten seconds!.</h4>
+        <button class="main start-button"> Start Quiz </button>
+      </main>  
+      
+      <section class="questionCard">
+
+      </section>
+
+
+ 
+
+        <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
