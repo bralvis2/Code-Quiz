@@ -65,7 +65,98 @@ main {
 }
 
 .questionCard {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+    padding: 10%;
+}
+
+.buttonEl {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 5%;
+
+}
+
+.alternatives {
+    background-color: var(--light-purple);
+    border-radius: 8px;
+    width: 50%;
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    letter-spacing: 0.21px;
+    padding: 10px;
+}
+
+#feedback {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#feedback-text{
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--light-pink);
+    font-style: italic;
+}
+
+/* End of Form CSS */
+.end {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.finalScore {
+    font-size: 3em;
+    text-align: center;
+    padding: 5%;
+}
+
+.end-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 5%;
+    text-align: center;
+    background: var(--baby-blue);
+    color:var(--light-pink);
+}
+
+#username {
+    margin: 5px;
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+.submit-btn{
+    background-color: var(--light-purple);
+    border-radius: 8px;
+    width: 40%;
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.0em;
+    letter-spacing: 0.21px;
+    padding: 5px;
+}
+
+.play-again-btn{
+    background-color: var(--ocean-blue);
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.0em;
+    letter-spacing: 0.21px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 30%;
 }

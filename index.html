@@ -3,14 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
-        <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /> -->
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title> Code Quiz </title>
     </head>
     <body>
-      <header>
+      <header id="header">
         <section class="high-score">
           <a> View high Scores</a>
         </section>
@@ -28,14 +26,35 @@
       </main>  
       
       <section class="questionCard">
-
+        <h2 class="title"></h2>
+        <div class="buttonEl">
+          <button class="alternatives" id="a" onclick="checkAnswers('a')"></button>
+          <button class="alternatives" id="b" onclick="checkAnswers('b')"></button>
+          <button class="alternatives" id="c" onclick="checkAnswers('c')"></button>
+          <button class="alternatives" id="d" onclick="checkAnswers('d')"></button>
+        </div>
+        <div id="feedback">
+          <p id="feedback-text"></p>
+        </div>
       </section>
 
+      <section class="end">
+        <h1 class="finalScore">0</h1>
+        <form class="end-form">
+          <h2 class="end-instructions">Enter your name below to save your score!</h2>
+          <input type="text" name="name" id="username" placeholder="Enter your name">
+          <button class="submit-btn" type="submit">Save</button>
+        </form>
+      </section>
 
- 
-
-        <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+      <section id="highScores">
+        <h2 id="highScoreTitle"> High Scores </h2>
+        <ul id="userHighScores">
+          <li></li>
+        </ul>
+        <button class="play-again-btn"> Play Again </button>
+      </section>
+  
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
