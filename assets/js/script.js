@@ -82,7 +82,6 @@ var correct = '';
 // Variables for a Timer
 var timeLeft;
 var interval;
-var timerPerQuestion = 10;
 
 
 // Variables for total score
