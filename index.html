@@ -10,10 +10,10 @@
     <body>
       <header id="header">
         <section class="high-score">
-          <a> View high Scores</a>
+          <button class="linktohighscores"> View high Scores</button>
         </section>
         <section class="timer">
-          <h5>Time Remianing:</h3>
+          <h5 class="timer"></h3>
         </section>
       </header>
 
@@ -28,10 +28,10 @@
       <section class="questionCard">
         <h2 class="title"></h2>
         <div class="buttonEl">
-          <button class="alternatives" id="a" onclick="checkAnswers('a')"></button>
-          <button class="alternatives" id="b" onclick="checkAnswers('b')"></button>
-          <button class="alternatives" id="c" onclick="checkAnswers('c')"></button>
-          <button class="alternatives" id="d" onclick="checkAnswers('d')"></button>
+          <button class="alternatives" id="a" ></button>
+          <button class="alternatives" id="b" ></button>
+          <button class="alternatives" id="c" ></button>
+          <button class="alternatives" id="d" ></button>
         </div>
         <div id="feedback">
           <p id="feedback-text"></p>
@@ -39,18 +39,17 @@
       </section>
 
       <section class="end">
-        <h1 class="finalScore">0</h1>
+        <h1 class="finalScore"></h1>
         <form class="end-form">
           <h2 class="end-instructions">Enter your name below to save your score!</h2>
           <input type="text" name="name" id="username" placeholder="Enter your name">
-          <button class="submit-btn" type="submit">Save</button>
+          <button class="submit-btn">Save</button>
         </form>
       </section>
 
       <section id="highScores">
         <h2 id="highScoreTitle"> High Scores </h2>
-        <ul id="userHighScores">
-          <li></li>
+        <ul id="userHighScores"></ul>
         </ul>
         <button class="play-again-btn"> Play Again </button>
       </section>
